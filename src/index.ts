@@ -96,9 +96,23 @@ class Parameter {
 }
 
 interface IParameter {
+    /**
+     * Parameter Flag
+     */
     flag: string |string[],
+    /**
+     * Callback is executed if flag is found
+     */
     callback: (value?: string | string[]) => void;
+    /**
+     * - "single": Callback is executed with no value
+     * - "value": value following the flag is given to the callback
+     * - "chain": given number of values (chain_length) is given to the callback
+     */
     type: "single" | "value" | "chain";
+    /**
+     * Number of values associated with a chain and given to the callback.
+     */
     chain_length?: number;
 }
 
