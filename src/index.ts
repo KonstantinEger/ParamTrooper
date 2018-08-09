@@ -24,7 +24,6 @@
 function params(paramArray: IParameter[], sliceStart = 2) {
     const parameters = putParamsInArray(paramArray);
     for (let aIndex = sliceStart; aIndex < process.argv.length; aIndex++) {
-        // console.log("p");
         const arg = process.argv[aIndex];
         for (let pIndex = 0; pIndex < parameters.length; pIndex++) {
             if (parameters[pIndex].flag === arg) {

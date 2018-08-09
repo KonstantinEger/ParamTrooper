@@ -1,7 +1,7 @@
 {
   "name": "paramtrooper",
   "version": "1.0.0",
-  "description": "Tool for managing cli parameters",
+  "description": "Tool for cli parameter parsing",
   "main": "dist/index.js",
   "scripts": {
     "test": "node test/index.spec.js",
